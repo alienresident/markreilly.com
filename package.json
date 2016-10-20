@@ -1,0 +1,45 @@
+{
+  "name": "markreilly.com",
+  "version": "1.0.0",
+  "description": "Mark Reilly's website",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alienresident/markreilly.com"
+  },
+  "author": "Mark Reilly",
+  "copyright": "2016",
+  "license": "GPL",
+  "private": false,
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "jshint-stylish": "^2.2.1",
+    "time-grunt": "^1.4.0"
+  },
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-htmlmin": "^2.0.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-livereload": "^0.1.2",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-grunticon": "^2.3.1",
+    "grunt-processhtml": "^0.4.1",
+    "grunt-sass": "^1.2.1",
+    "grunt-svgmin": "^4.0.0",
+    "grunt-uncss": "^0.6.1",
+    "load-grunt-config": "^0.19.2",
+    "matchdep": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
