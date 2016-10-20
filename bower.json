@@ -1,0 +1,22 @@
+{
+  "name": "resume-redux",
+  "version": "0.0.1",
+  "homepage": "https://github.com/alienresident/resume",
+  "authors": [
+    "Mark Reilly <mark@alienresident.net>"
+  ],
+  "description": "Mark Reilly resume",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "breakpoint-sass": "^2.7.0",
+    "normalize-css": "normalize.css#^5.0.0",
+    "modular-scale": "^2.1.3"
+  }
+}
