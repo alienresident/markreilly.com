@@ -1,0 +1,82 @@
+//////////////////////////////
+// LAYOUT: Print Styles
+//////////////////////////////
+
+// Print Styles
+// style sheet for "letter" printing //
+
+@media print {
+  @page {
+    size: 8.5in 11in;
+    margin: .5in .25in .25in .25in;
+  }
+  html {
+    @include type-size($body-font-size - 5);
+  }
+  body {
+    @include type-size( 1rem, $body-line-height - .1);
+  }
+  a,
+  a:visited,
+  a:link {
+    //color: #444; // to be determined later
+  }
+
+  .download-pdf {
+    display: none;
+  }
+
+  h1 {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  // force page breaks
+  .employment-period.page-2 {
+    page-break-before: always;
+
+    h3 {
+      margin-top: 1em;
+    }
+  }
+
+  .experience-skills {
+    display: table;
+    width: 100%;
+
+    .ux-skills {
+      display: table-cell;
+      width: ms(13);
+    }
+
+    .tech-skills {
+      display: table-cell;
+      max-width: ms(11);
+    }
+  }
+
+  h2 {
+    margin-top: .25em;
+    padding-top: 0;
+  }
+  
+  // force page breaks
+  .additional-information {
+    page-break-before: always;
+
+    h2 {
+      margin-top: 1em;
+      margin-bottom: .75em;
+    }
+
+    h3 {
+      margin-top: 1em;
+      margin-bottom: .75em;
+    }
+
+    h4 {
+      margin-top: 1em;
+      margin-bottom: .75em;
+    }
+  }
+}

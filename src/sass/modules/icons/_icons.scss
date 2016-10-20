@@ -1,0 +1,13 @@
+//////////////////////////////
+// MODULES: Styles that are layout independent 
+//////////////////////////////
+
+[class^="icon-"] {
+  height: 1em;
+  width: 1em;
+  background-position: 50% 50%;
+  display: inline-block;
+  background-size: cover;
+  margin: 0 .175em;
+  vertical-align: text-top;
+}
