@@ -12,7 +12,6 @@ module.exports = {
         'sass:dev'
     ],
     devSecond: [
-        'processhtml:dev',
         'concat:dev'
     ],
 
@@ -30,11 +29,26 @@ module.exports = {
      prodThird: [
         'cssmin',
         'htmlmin',
-        'uglify',
+        'uglify'
     ],
 
     // Image tasks
-    imgFirst: [
+    imgResponsive1: [
+        'copy:images',
+        'responsive_images'
+    ],
+    imgResponsive1a: [
+        'copy:imagesHTML',
+        'responsive_images'
+    ],
+    imgResponsive2: [
+        'responsive_images_extender'
+    ],
+    imgResponsive2a: [
+        'responsive_images_extender',
+        'copy:imagesRes'
+    ],
+    imgMin: [
         'imagemin',
         'svgmin'
     ]

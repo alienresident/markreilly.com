@@ -10,12 +10,19 @@ dev:
 img:
     description: 'Image tasks'
     tasks:
-        - 'concurrent:imgFirst'
+        - 'concurrent:imgResponsive1'
+        - 'concurrent:imgResponsive2'
+        - 'concurrent:imgMin'
+imgres:
+    description: 'Image tasks'
+    tasks:
+        - 'concurrent:imgResponsive1a'
+        - 'concurrent:imgResponsive2a'     
 devimg:
     description: 'Development build and image tasks'
     tasks:
         - dev
-        - img
+        - imgres
 prod:
     description: 'Production build'
     tasks:
