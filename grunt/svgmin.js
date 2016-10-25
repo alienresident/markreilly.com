@@ -10,7 +10,7 @@ module.exports = {
             expand: true,
             cwd: 'src/svgs',
             src: ['*.svg'],
-            dest: 'tmp/svgs'
+            dest: 'dist/svgs'
         }]
     }
 };
