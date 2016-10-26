@@ -33,17 +33,17 @@ html {
 }
 
 body {
-  @include respond-to("large") {
-    @include type-size(1em, $body-line-height); // 16px/1.5em IE 8 fallback
-    @include type-size(1rem, $body-line-height); // 16px/1.5em
+
+  @include respond-to("xx-large") {
+    @include type-size(1rem, $body-line-height + .16666); // 21px/1.6666em
   }
 
   @include respond-to("x-large") {
     @include type-size(1rem, $body-line-height + .16666); // 18px/1.6666em
   }
 
-  @include respond-to("xx-large") {
-    @include type-size(1rem, $body-line-height + .16666); // 21px/1.6666em
+  @include respond-to("large") {
+    @include type-size(1rem, $body-line-height); // 16px/1.5em
   }
 
   @include respond-to("medium") {
@@ -54,10 +54,21 @@ body {
     @include type-size(1rem, $body-line-height - .1); // 12px/1.4em
     word-spacing: -.085em;
   }
+
+    background-image: url('images/cutting-mat-black-10a.png');
+    background-size: cover;
+    background-color: white;
+    background-position: top center;
 }
 
 .wrapper {
-  margin: 0 auto;
-  max-width: ms(15);
-  padding: 0 1em;
+    margin: 0 auto;
+    max-width: ms(15);
+    padding: 1em;
+    background: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
