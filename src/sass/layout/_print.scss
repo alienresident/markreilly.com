@@ -10,12 +10,15 @@
     size: 8.5in 11in;
     margin: .5in .25in .25in .25in;
   }
+
   html {
     @include type-size($body-font-size - 5);
   }
+
   body {
     @include type-size( 1rem, $body-line-height - .1);
   }
+
   a,
   a:visited,
   a:link {
