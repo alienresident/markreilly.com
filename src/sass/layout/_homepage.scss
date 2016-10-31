@@ -2,3 +2,24 @@
 // LAYOUT: Homepage Layout Styles
 //////////////////////////////
 
+body {
+    padding-top: 3.125%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    background-image: radial-gradient(rgba(255,255,255,.75), rgba(255,255,255,.25)), url(images/white_paper_tile.jpg);
+    max-width: 93.75%; // 300 @320
+}
+
+#business-card {
+   
+}
+
+.image {
+    padding: 1em;
+}
+
+.portrait {
+    box-shadow: -2px -2px 2px rgba(0,0,0,.25), 2px 2px 2px rgba(255,255,255,.7);
+}
