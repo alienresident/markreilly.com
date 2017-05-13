@@ -1,16 +1,14 @@
 @charset "UTF-8";
 
 @import "../../bower_components/breakpoint-sass/stylesheets/breakpoint";
-@import "../../bower_components/modular-scale/stylesheets/_modular-scale";
-
 
 @import "partials/_mixins";
 @import "layout/_breakpoints";
-@import "modules/webfont/_webfont";
-@import "modules/icons/_icons";
 
 @import "base/_typography";
 @import "base/_links";
 @import "base/_page";
+@import "modules/icons/_icons";
 @import "layout/_homepage";
+@import "modules/webfont/_webfont";
 @import "layout/_print";
