@@ -1,13 +1,16 @@
-//////////////////////////////
-// VARIABLES: For layout breakpoints 
-//////////////////////////////
+// //////////////////////////////
+// // VARIABLES: For layout breakpoints 
+// //////////////////////////////
 
-// https://github.com/at-import/breakpoint/wiki/Respond-To
-$breakpoint-to-ems: true;
+// // https://github.com/at-import/breakpoint/wiki/Respond-To
+// $breakpoint-to-ems: true;
 
-$breakpoints: add-breakpoint("xx-large", (1440px));
-$breakpoints: add-breakpoint("x-large", (1200px 1439px));
-$breakpoints: add-breakpoint("large", (960px 1199px, 'no-query' true));
-$breakpoints: add-breakpoint("medium", (720px 959px));
-$breakpoints: add-breakpoint("small", (480px 719px));
-$breakpoints: add-breakpoint("x-small", (240px 479px));
+@include add-breakpoint("xxx-large", (1600px));
+@include add-breakpoint("xx-large", (1200px));
+@include add-breakpoint("x-large", (960px 1199px));
+@include add-breakpoint("large", (768px 959px)(orientation landscape));    
+@include add-breakpoint("medium", (480px 767px)(orientation landscape));
+@include add-breakpoint("small", (240px 479px));
+
+@include add-breakpoint("large-op", (768px 959px)(orientation portrait));
+@include add-breakpoint("medium-op", (480px 767px)(orientation portrait));
