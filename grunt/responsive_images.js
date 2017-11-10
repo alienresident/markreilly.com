@@ -10,7 +10,7 @@ module.exports = {
           name: "large",
           width: 1024,
           suffix: "_x2",
-          quality: 60
+          quality: 40
         }]
       },
       files: [{
