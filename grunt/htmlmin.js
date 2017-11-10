@@ -5,7 +5,7 @@ module.exports = {
             collapseWhitespace: true
         },
         files: {  // Dictionary of files
-            'dist/index.html': 'tmp/index-process.html'
+            'dist/index.html': 'dist/index.html'
         }
     }   
 }

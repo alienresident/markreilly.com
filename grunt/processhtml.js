@@ -6,7 +6,7 @@ module.exports = {
   },
   prod:  {
     files: {
-      'tmp/index-process.html': ['src/index.html']
+      'tmp/index-process.html': ['tmp/index.html']
     }
   }
 }
