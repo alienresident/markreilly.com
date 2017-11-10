@@ -17,7 +17,8 @@ imgres:
     description: 'Image tasks'
     tasks:
         - 'concurrent:imgResponsive1a'
-        - 'concurrent:imgResponsive2a'     
+        - 'concurrent:imgResponsive2a'
+        - 'concurrent:imgMin'     
 devimg:
     description: 'Development build and image tasks'
     tasks:
@@ -28,5 +29,6 @@ prod:
     tasks:
         - 'concurrent:prodFirst'
         - 'concurrent:prodSecond'
-        - 'concurrent:prodThird'
         - img
+        - 'concurrent:prodThird'
+        - 'concurrent:prodFourth'

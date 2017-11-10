@@ -8,29 +8,30 @@ module.exports = {
     // Dev tasks
     devFirst: [
         'clean',
-        'jshint',
         'sass:dev'
     ],
     devSecond: [
-        'concat:dev'
+        'concat:dev',
+        'copy:dev'
     ],
 
     // Production tasks
     prodFirst: [
         'clean',
-        'jshint',
-        'processhtml:prod'
+        'sass:dev'
     ],
     prodSecond: [
-        'sass:prod',
-        'uncss',
-        'autoprefixer'
+        'concat:dist',
+        'copy:dist',      
+        'uncss'
     ],
      prodThird: [
-        'cssmin',
-        'htmlmin',
-        'uglify'
+        'autoprefixer'
     ],
+     prodFourth: [
+        'cssmin',
+        'htmlmin'
+    ],  
 
     // Image tasks
     imgResponsive1: [
