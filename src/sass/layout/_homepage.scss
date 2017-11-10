@@ -3,23 +3,468 @@
 //////////////////////////////
 
 body {
-    padding-top: 3.125%;
+    background: #0f0f0f;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,.35) 10%, rgba(0,0,0,0)),url(images/grid-background.svg), url(images/mat-pattern.jpg);
+    background-size: 2400px 1500px, 2400px 1500px, 128px 128px;
+    background-position: top left, top left, top left;
+    background-blend-mode: hard-light;
+    color: #222;
 }
 
 .wrapper {
     margin: 0 auto;
-    background-image: radial-gradient(rgba(255,255,255,.75), rgba(255,255,255,.25)), url(images/white_paper_tile.jpg);
-    max-width: 93.75%; // 300 @320
 }
 
 #business-card {
-   
+    background: #eee;
+    background-image: radial-gradient(rgba(255,255,255,.75), rgba(255,255,255,.25)), url(images/white_paper_tile.jpg);
+    margin: 1.5rem;
+
+    @include respond-to("large") {
+        position: relative;
+    }
+
+    @include respond-to("large-op") {
+        position: relative;
+    }
+
+    @include respond-to("x-large") {
+        position: relative;
+    }
+
+    @include respond-to("xx-large") {
+        position: relative;
+    }
+
+    @include respond-to("xxx-large") {
+        position: relative;
+        max-width: 1552px;
+        margin: 1.5rem auto;
+    }
 }
 
 .image {
-    padding: 1em;
+    padding: 1rem 1rem 0 1rem; // 16px
+
+    @include respond-to("medium") {
+        width: 42%; // 200px at 476px
+        display: table-cell;
+        padding: 1rem 0 0 1rem; 
+    }
+
+    @include respond-to("large") {
+        width: 48%; // 273px at 768px
+        display: table-cell;
+        padding: 2.25rem;
+    }
+
+    @include respond-to("large-op") {
+        padding: 2.25rem 2.25rem 0 2.25rem;
+    }
+
+    @include respond-to("x-large") {
+        padding: 2.25rem;
+        width: 58.5%; // 500px at 1024px
+        display: table-cell;
+    }
+
+    @include respond-to("xx-large") {
+        padding: 2.25rem;
+        width: 49.375%; // 500px at 1200px
+        display: table-cell;
+    }
+
+    @include respond-to("xxx-large") {
+        padding: 2.25rem;
+        width: 54.125%; // 768 at 1600px
+        display: table-cell;
+    }
+
 }
 
-.portrait {
-    box-shadow: -2px -2px 2px rgba(0,0,0,.25), 2px 2px 2px rgba(255,255,255,.7);
+.photo-details {
+
+    @include respond-to("medium") {
+        display: table;
+    } 
+    
+    @include respond-to("large") {
+        display: table;
+    }
+
+    @include respond-to("x-large") {        
+        display: table;
+    }
+
+    @include respond-to("xx-large") {        
+        display: table;
+    }
+
+    @include respond-to("xxx-large") {
+        display: table;
+    }      
+}
+
+.personal-details {
+
+    @include respond-to("medium") {
+        display: table-cell;
+        vertical-align: top;
+        padding-top: 1rem;
+    }
+
+    @include respond-to("medium-op") {
+        margin: 0 auto;
+        width: 61%;
+        text-align: left;
+    }
+
+    @include respond-to("large") {
+        display: table-cell;
+        vertical-align: top;
+        padding-top: 1.25rem;
+    }
+
+    @include respond-to("large-op") {
+        margin: 0 auto;
+        width: 53%;
+    }
+
+    @include respond-to("x-large") {
+        display: table-cell;
+        vertical-align: middle;
+    }      
+
+    @include respond-to("xx-large") {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    @include respond-to("xxx-large") {
+        display: table-cell;
+        vertical-align: middle;
+    }  
+}
+
+
+h1 {
+    padding: 0;
+    margin: 0;
+
+    @include respond-to("small") {
+        padding: 0 1rem;
+        font-size: 3rem;
+        @include wf-loader($font-name, $font-name--lowercase, 400);
+    } 
+
+    @include respond-to("medium") {
+        padding: 0 1rem;
+        font-size: 3rem;
+        @include wf-loader($font-name, $font-name--lowercase, 400);
+    }
+    
+    @include respond-to("medium-op") {
+        padding: 0 0 0 1rem;
+        font-size: 3rem;
+        @include wf-loader($font-name, $font-name--lowercase, 400);
+    }
+
+    @include respond-to("large") {
+        font-size: 4.5rem;
+        @include wf-loader($font-name, $font-name--lowercase, 300);
+    } 
+
+    @include respond-to("large-op") {
+        font-size: 4.5rem;
+        @include wf-loader($font-name, $font-name--lowercase, 300);
+    }  
+
+    @include respond-to("x-large") {
+        font-size: 4.5rem;
+        @include wf-loader($font-name, $font-name--lowercase, 300);
+    }
+
+    @include respond-to("xx-large") {
+        font-size: 6rem;
+        @include wf-loader($font-name, $font-name--lowercase, 100);
+    }
+
+    @include respond-to("xxx-large") {
+        font-size: 7.5rem;
+        @include wf-loader($font-name, $font-name--lowercase, 100);
+    } 
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+
+    @include respond-to("small") {
+        padding: 0 1rem;
+        font-size: 2rem;
+        @include wf-loader($font-name, $font-name--lowercase, 400);
+    } 
+
+    @include respond-to("medium") {
+        padding: 0 0 0 1rem;
+        font-size: 2rem;
+        @include wf-loader($font-name, $font-name--lowercase, 400);
+    }
+
+    @include respond-to("medium-op") {
+        padding: 0 1rem;
+        font-size: 2rem;
+        @include wf-loader($font-name, $font-name--lowercase, 400);
+    } 
+
+    @include respond-to("large") {
+        font-size: 3rem;
+        @include wf-loader($font-name, $font-name--lowercase, 300);
+    }
+
+    @include respond-to("large-op") {
+        font-size: 3rem;
+        @include wf-loader($font-name, $font-name--lowercase, 300);
+    }
+
+    @include respond-to("x-large") {
+        font-size: 3rem;
+        @include wf-loader($font-name, $font-name--lowercase, 300);
+    }
+
+    @include respond-to("xx-large") {
+        font-size: 4rem;
+        @include wf-loader($font-name, $font-name--lowercase, 100);
+    }
+
+    @include respond-to("xxx-large") {
+        font-size: 5rem;
+        @include wf-loader($font-name, $font-name--lowercase, 100);
+    }           
+}
+
+.contact-links {
+    list-style: none;
+    margin: .25rem 0;
+    padding: 0;
+    font-size: 1.25rem; // 20px
+    line-height: 1.5;
+
+    @include respond-to("small") {
+        padding: 0 1rem;
+    }
+
+    @include respond-to("medium") {
+        padding: 0 0 0 1rem;
+    }
+
+    @include respond-to("medium-op") {
+        padding: 0 1rem;
+    }
+
+    @include respond-to("large") {
+        font-size: 1.875rem; // 30px
+        //padding-bottom: 3rem;
+    }
+
+    @include respond-to("large-op") {
+        font-size: 1.875rem; // 30px
+        padding-bottom: 3rem;
+    }
+
+    @include respond-to("x-large") {
+        font-size: 1.875rem; // 30px
+        padding-bottom: 3rem;
+    }
+
+    @include respond-to("xx-large") {
+        font-size: 2.5rem; // 40px
+        padding-bottom: 3rem;
+    }
+
+    @include respond-to("xxx-large") {
+        font-size: 3rem; // 48px
+        padding-bottom: 3rem;
+    }
+}
+
+.personal-links {
+    display: table;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    li {
+        display: table-cell;
+        width: 25%;
+        margin: 0;
+        padding: 0;
+        text-align: center; 
+
+        a {
+            margin: 0 auto;
+            color: #222;
+            line-height: 2.25;
+            font-size: .75rem;
+
+            @include respond-to("xx-large") {
+                font-size: .9375rem;
+            }
+
+            @include respond-to("xxx-large") {
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    @include respond-to("large") {
+
+        position: absolute;
+        bottom: 8%;
+        right: 2%;
+        width: 54%;
+    }
+
+    @include respond-to("large-op") {
+        position: absolute;
+        top: 64%;
+        left: 15%;
+        width: 70%;
+    }
+
+    @include respond-to("x-large") {
+        position: absolute;
+        top: 6%;
+        right: 9%;
+        width: 35%;
+    }
+
+    @include respond-to("xx-large") {
+        position: absolute;
+        top: 6%;
+        right: 13%;
+        width: 40%;
+    }
+
+    @include respond-to("xxx-large") {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 42%;
+    }    
+}
+
+// Animations
+
+#business-card { 
+    animation: slide-in-bck-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) .4s both;
+}
+.image-bg {
+    // SVG Silo for photo
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath fill='%23DDD' d='M.04 200v-15.97l10.26-2.84s11.93-4.83 15.62-4.83c3.69 0 5.68-1.14 8.23-1.99 2.56-.86-2.27.28 4.26-1.71 6.53-1.99 4.54-2.56 6.53-1.99 1.99.57 5.96-.21 5.96-.21h1.42s2.52-.99 3.12-1.5c.6-.51 3.45-6.5 3.41-7.68-.05-1.19-8.53-14.54-9.94-19.06-1.44-4.61-1.14-10.24-1.14-12.52 0-2.27-1.14-3.41-1.42-5.69-.29-2.28-2.27-4.56-3.13-9.39-.85-4.84-3.41-14.79-3.41-14.79s-2.8-6.89-.57-7.4c2.48-.57 6.1 1.56 6.1 1.56l-2.95-5.33s-1.01-1.8-1.53-2.84c-3.73-7.48-4.21-10.55-4.21-10.55s-3.53-7.37-2.68-15.05c.85-7.68 4.26-17.07 10.52-23.71 6.12-6.5 14.33-11.21 14.33-11.21s-.36-5.99 1.14-9.39c2.13-4.83 6.1-7.57 11.5-9 5.4-1.42 20.37-.96 33.65-.1 13.31.86 17.3 3.65 20.88 5.91 5.75 3.63 6.6 7.04 9.23 10.31 3.03 3.78 10.5 11.66 12.78 16.5 2.27 4.84 8.02 12.52 6.31 17.85-.87 2.72-2.87 4.28-2.58 6.27.29 1.99 2.39 6.16 1.52 9.01-.87 2.84-2.14 8.97-2.14 10.4 0 1.42 1.44.85 3.28.57 1.83-.28 2.13 1.15 2.4 3.98.32 3.28 1.13 7.11 1.42 9.96.28 2.84.21 8.24-.93 10.81s-2.77 6.82-2.77 9.67c0 2.84-3.41 5.98-3.41 7.11 0 1.14-3.69 3.14-4.26 4.56-.57 1.42.28 4.55-1.42 9.1-1.71 4.55-6.25 13.37-7.67 14.5-1.42 1.14-.85 16.78-.85 16.78l8.24 6.82s.29-.57 1.99-.57 1.48.39 3.75 2.66 4.81 1.9 7.23 2.89c1.01.41 1.8 2.98 4.08 3.84 2.27.86 2.06.15 4.05.71 1.98.57 5.61 1.28 9.3 3.27 3.69 1.99 11.64 7.4 13.91 7.68 2.27.28 4.54 2.6 4.54 2.6H0v-.01l.04.01z'/%3E%3C/svg%3E");
+    img {
+        width: 100%;
+        opacity: 0;
+        animation: fadein 2s ease-in 1s forwards;
+  }
+}
+
+h1 {
+    span {
+        background: linear-gradient(0deg, rgba($block-color, 0) 2%, rgba($block-color,1) 2%, rgba($block-color,1) 86%, rgba($block-color, 0) 86%);
+        color: rgba($text-color,0);
+        animation: fadeout 1s ease-in 1.5s forwards;
+
+    }
+}
+ 
+h2 {
+    span {
+        background: linear-gradient(0deg, rgba($block-color, 0) 2%, rgba($block-color,1) 2%, rgba($block-color,1) 86%, rgba($block-color, 0) 86%);
+        color: rgba($text-color,0);
+        animation: fadeout 1s ease-in 2s forwards;
+
+    }
+}
+
+.contact-links li a {
+    &:link,
+    &:visited {
+        background: linear-gradient(0deg, rgba($block-color, 0) 2%, rgba($block-color,1) 2%, rgba($block-color,1) 86%, rgba($block-color, 0) 86%);
+        color: rgba($link-color,0);
+        animation: fadelinks 1s ease-in 3s forwards;
+    }
+}
+
+.personal-links li a {
+
+    span {
+        -webkit-filter: grayscale(100%) brightness(3);
+        filter: grayscale(100%) brightness(3);
+        animation: fadeborder 1s ease-in 3.5s forwards;
+    }
+
+    &:link,
+    &:visited {
+        background: linear-gradient(0deg, rgba($block-color, 0) 2%, rgba($block-color,1) 2%, rgba($block-color,1) 86%, rgba($block-color, 0) 86%);
+        color: rgba($text-color,0);
+        animation: fadeout 1s ease-in 3.5s forwards;
+    }
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from {  
+            background: linear-gradient(0deg, rgba($block-color, 0) 2%, rgba($block-color,1) 2%, rgba($block-color,1) 86%, rgba($block-color, 0) 86%);
+            color: rgba($text-color,0);
+         }
+    to   { 
+            background: rgba($block-color, 0);
+            color: rgba($text-color,1);
+         }
+}
+
+@keyframes fadelinks {
+    from {  
+            background: linear-gradient(0deg, rgba($block-color, 0) 2%, rgba($block-color,1) 2%, rgba($block-color,1) 86%, rgba($block-color, 0) 86%);
+            color: rgba($link-color,0);
+         }
+    to   { 
+            background: rgba($block-color, 0);
+            color: rgba($link-color,1);
+         }
+}
+
+@keyframes fadeborder {
+    from {  
+            -webkit-filter: grayscale(100%) brightness(3);
+            filter: grayscale(100%) brightness(3);
+         }
+    to   { 
+            -webkit-filter: grayscale(0%) brightness(1);
+            filter: grayscale(0%) brightness(1);
+         }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2017-5-10 22:20:2
+ * http://animista.net
+ * T: @cssanimista
+ * ---------------------------------------------- */
+
+@keyframes slide-in-bck-top {
+    0% {
+            transform:scale(2) translateZ(2000px) translateY(-300px);
+            opacity:0;
+         }
+    100%   {
+            transform:scale(1) translateZ(0) translateY(0);
+            opacity:1;
+         }
 }
