@@ -18,7 +18,10 @@ imgres:
     tasks:
         - 'concurrent:imgResponsive1a'
         - 'concurrent:imgResponsive2a'
+<<<<<<< Updated upstream
         - 'concurrent:imgMin'     
+=======
+>>>>>>> Stashed changes
 devimg:
     description: 'Development build and image tasks'
     tasks:
@@ -31,4 +34,9 @@ prod:
         - 'concurrent:prodSecond'
         - img
         - 'concurrent:prodThird'
+<<<<<<< Updated upstream
         - 'concurrent:prodFourth'
+=======
+        - 'concurrent:prodFourth'        
+        - img
+>>>>>>> Stashed changes
