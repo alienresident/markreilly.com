@@ -21,31 +21,17 @@ module.exports = {
         'sass:dev'
     ],
     prodSecond: [
-<<<<<<< Updated upstream
         'concat:dist',
-        'copy:dist',      
+        'copy:dist',
         'uncss'
     ],
      prodThird: [
         'autoprefixer'
-=======
-        'sass:prod',
-        'concat:prod'
-    ],
-    prodThird: [
-        'uncss',
-        'autoprefixer'
-    ],
-     prodFourth: [
-        'cssmin',
-        'htmlmin',
-        'uglify'
->>>>>>> Stashed changes
     ],
      prodFourth: [
         'cssmin',
         'htmlmin'
-    ],  
+    ],
 
     // Image tasks
     imgResponsive1: [
