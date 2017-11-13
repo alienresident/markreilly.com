@@ -21,8 +21,8 @@ module.exports = {
         'sass:dev'
     ],
     prodSecond: [
-        'concat:dist',
-        'copy:dist',
+        'concat:prod',
+        'copy:prod',
         'uncss'
     ],
      prodThird: [

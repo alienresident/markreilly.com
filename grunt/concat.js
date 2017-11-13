@@ -7,7 +7,7 @@ module.exports = {
     prod: {
         files: {
             //'tmp/js/homepage.scripts.js': ['src/js/*.js'],
-            'tmp/css/all.uncss.css': ['bower_components/normalize-css/normalize.css/normalize.css', 'src/css/global.css'],
+            'tmp/css/all.css': ['bower_components/normalize-css/normalize.css/normalize.css', 'src/css/global.css'],
         }
     }
 }

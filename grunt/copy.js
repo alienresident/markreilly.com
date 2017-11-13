@@ -1,5 +1,5 @@
 module.exports = {
-    dist: {
+    prod: {
         files: [
             {expand: true, cwd: 'src/', src: ['*.{html,htm,php}'], dest: 'tmp/', filter: 'isFile'}
         // src: 'src/index.html',
