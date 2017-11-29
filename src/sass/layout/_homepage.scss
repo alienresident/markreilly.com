@@ -49,7 +49,7 @@ body {
     @include respond-to("medium") {
         width: 42%; // 200px at 476px
         display: table-cell;
-        padding: 1rem 0 0 1rem; 
+        padding: 1rem 0 0 1rem;
     }
 
     @include respond-to("large") {
@@ -86,23 +86,23 @@ body {
 
     @include respond-to("medium") {
         display: table;
-    } 
-    
+    }
+
     @include respond-to("large") {
         display: table;
     }
 
-    @include respond-to("x-large") {        
+    @include respond-to("x-large") {
         display: table;
     }
 
-    @include respond-to("xx-large") {        
+    @include respond-to("xx-large") {
         display: table;
     }
 
     @include respond-to("xxx-large") {
         display: table;
-    }      
+    }
 }
 
 .personal-details {
@@ -133,7 +133,7 @@ body {
     @include respond-to("x-large") {
         display: table-cell;
         vertical-align: middle;
-    }      
+    }
 
     @include respond-to("xx-large") {
         display: table-cell;
@@ -143,7 +143,7 @@ body {
     @include respond-to("xxx-large") {
         display: table-cell;
         vertical-align: middle;
-    }  
+    }
 }
 
 
@@ -155,14 +155,14 @@ h1 {
         padding: 0 1rem;
         font-size: 3rem;
         @include wf-loader($font-name, $font-name--lowercase, 400);
-    } 
+    }
 
     @include respond-to("medium") {
         padding: 0 1rem;
         font-size: 3rem;
         @include wf-loader($font-name, $font-name--lowercase, 400);
     }
-    
+
     @include respond-to("medium-op") {
         padding: 0 0 0 1rem;
         font-size: 3rem;
@@ -172,12 +172,12 @@ h1 {
     @include respond-to("large") {
         font-size: 4.5rem;
         @include wf-loader($font-name, $font-name--lowercase, 300);
-    } 
+    }
 
     @include respond-to("large-op") {
         font-size: 4.5rem;
         @include wf-loader($font-name, $font-name--lowercase, 300);
-    }  
+    }
 
     @include respond-to("x-large") {
         font-size: 4.5rem;
@@ -192,7 +192,7 @@ h1 {
     @include respond-to("xxx-large") {
         font-size: 7.5rem;
         @include wf-loader($font-name, $font-name--lowercase, 100);
-    } 
+    }
 }
 
 h2 {
@@ -203,7 +203,7 @@ h2 {
         padding: 0 1rem;
         font-size: 2rem;
         @include wf-loader($font-name, $font-name--lowercase, 400);
-    } 
+    }
 
     @include respond-to("medium") {
         padding: 0 0 0 1rem;
@@ -215,7 +215,7 @@ h2 {
         padding: 0 1rem;
         font-size: 2rem;
         @include wf-loader($font-name, $font-name--lowercase, 400);
-    } 
+    }
 
     @include respond-to("large") {
         font-size: 3rem;
@@ -240,7 +240,7 @@ h2 {
     @include respond-to("xxx-large") {
         font-size: 5rem;
         @include wf-loader($font-name, $font-name--lowercase, 100);
-    }           
+    }
 }
 
 .contact-links {
@@ -290,7 +290,7 @@ h2 {
 
 .personal-links {
     display: table;
-    list-style: none; 
+    list-style: none;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -300,7 +300,7 @@ h2 {
         width: 25%;
         margin: 0;
         padding: 0;
-        text-align: center; 
+        text-align: center;
 
         a {
             margin: 0 auto;
@@ -352,12 +352,12 @@ h2 {
         top: 5%;
         right: 5%;
         width: 42%;
-    }    
+    }
 }
 
 // Animations
 
-#business-card { 
+#business-card {
     animation: slide-in-bck-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) .4s both;
 }
 .image-bg {
@@ -378,7 +378,7 @@ h1 {
 
     }
 }
- 
+
 h2 {
     span {
         background: linear-gradient(0deg, rgba($block-color, 0) 2%, rgba($block-color,1) 2%, rgba($block-color,1) 86%, rgba($block-color, 0) 86%);
@@ -420,33 +420,33 @@ h2 {
 }
 
 @keyframes fadeout {
-    from {  
+    from {
             background: linear-gradient(0deg, rgba($block-color, 0) 2%, rgba($block-color,1) 2%, rgba($block-color,1) 86%, rgba($block-color, 0) 86%);
             color: rgba($text-color,0);
          }
-    to   { 
+    to   {
             background: rgba($block-color, 0);
             color: rgba($text-color,1);
          }
 }
 
 @keyframes fadelinks {
-    from {  
+    from {
             background: linear-gradient(0deg, rgba($block-color, 0) 2%, rgba($block-color,1) 2%, rgba($block-color,1) 86%, rgba($block-color, 0) 86%);
             color: rgba($link-color,0);
          }
-    to   { 
+    to   {
             background: rgba($block-color, 0);
             color: rgba($link-color,1);
          }
 }
 
 @keyframes fadeborder {
-    from {  
+    from {
             -webkit-filter: grayscale(100%) brightness(3);
             filter: grayscale(100%) brightness(3);
          }
-    to   { 
+    to   {
             -webkit-filter: grayscale(0%) brightness(1);
             filter: grayscale(0%) brightness(1);
          }
